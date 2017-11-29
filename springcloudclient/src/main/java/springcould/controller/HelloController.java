@@ -7,18 +7,19 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import springcould.service.HelloService;
+import springcould.service.IFeignService;
 
 @RestController
 public class HelloController {
 	
 	@Resource
-	private HelloService helloService;
+	private IFeignService feignService;
 
     @RequestMapping("/")
     @ResponseBody
     public String index() {
-        return helloService.get();
+        return feignService.get();
     }
 
+    
 }
