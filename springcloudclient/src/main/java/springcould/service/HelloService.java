@@ -12,6 +12,6 @@ public class HelloService {
 	private RestTemplate restTemplate;
 	
 	public String get(){
-		return restTemplate.getForObject("http://MIDARE/search",String.class);
+		return restTemplate.getForObject("http://HELLO/access",String.class);
 	}
 }
