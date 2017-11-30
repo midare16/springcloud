@@ -1,4 +1,4 @@
-package springcould.service;
+package springcloud.service;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
