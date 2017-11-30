@@ -1,4 +1,4 @@
-package springcould.service;
+package springcloud.service;
 
 import org.springframework.stereotype.Component;
 

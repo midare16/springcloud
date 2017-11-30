@@ -1,4 +1,4 @@
-package springcould.controller;
+package springcloud.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package springcould.controller;
+package springcloud.controller;
 
 import javax.annotation.Resource;
 
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import springcould.service.IFeignService;
+import springcloud.service.IFeignService;
 
 @RestController
 public class HelloController {
