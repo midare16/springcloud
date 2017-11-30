@@ -1,4 +1,4 @@
-package springcould.controller;
+package springcloud.controller;
 
 import javax.annotation.Resource;
 
@@ -7,19 +7,18 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import springcould.service.IFeignService;
+import springcloud.service.HelloService;
 
 @RestController
 public class HelloController {
 	
 	@Resource
-	private IFeignService feignService;
+	private HelloService helloService;
 
     @RequestMapping("/")
     @ResponseBody
     public String index() {
-        return feignService.get();
+        return helloService.get();
     }
 
-    
 }
